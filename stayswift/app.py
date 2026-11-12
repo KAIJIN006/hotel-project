@@ -135,7 +135,7 @@ def admin_cancel(bid):
  if r: notify(dict(r)); flash('Cancelled; waitlist emails triggered.','success')
  return redirect('/admin')
 if __name__=='__main__': init_db(); app.run(debug=True)
- import os, sqlite3, secrets, smtplib
+import os, sqlite3, secrets, smtplib
 from datetime import date, datetime
 from email.message import EmailMessage
 from functools import wraps
