@@ -272,5 +272,4 @@ def admin_cancel(bid):
  if r: notify(dict(r)); flash('Cancelled; waitlist emails triggered.','success')
  return redirect('/admin')
 if __name__=='__main__': init_db(); app.run(debug=True)
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+
